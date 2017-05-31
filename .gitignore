@@ -86,6 +86,7 @@ build-iPhoneSimulator/
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 .idea
+algorithm-training.iml
 
 # JIRA plugin
 atlassian-ide-plugin.xml
