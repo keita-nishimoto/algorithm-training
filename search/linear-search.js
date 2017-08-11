@@ -14,7 +14,7 @@ const linearSearch = (targetData, searchNumber) => {
     }
   }
 
-  throw new Error("NotFound");
+  throw new Error('NotFound');
 };
 
 // 検索対象の配列
