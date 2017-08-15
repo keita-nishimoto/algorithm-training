@@ -2,7 +2,7 @@
  * 昇順でソートする
  *
  * @param targetData
- * @returns {*}
+ * @returns {Array}
  */
 const bubbleSortByAsc = (targetData) => {
 
