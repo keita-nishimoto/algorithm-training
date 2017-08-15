@@ -5,28 +5,22 @@
  * @returns {*}
  */
 const bubbleSortByAsc = (targetData) => {
-  let i = 0;
 
-  while (i < targetData.length -1) {
-    let j = 0;
-
-    while (j < targetData.length - i - 1) {
-      // 現在の値と次の値を比較し、現在の値が大きい場合は入れ替える
-      if (targetData[j] > targetData[j + 1]) {
+  for (let i = 0; i < targetData.length; i++) {
+    for (let j = targetData.length - 1; j > i; j--) {
+      if (targetData[j] < targetData[j - 1]) {
         let tmp = targetData[j];
-        targetData[j] = targetData[j + 1];
-        targetData[j + 1] = tmp;
+        targetData[j] = targetData[j - 1];
+        targetData[j - 1] = tmp;
       }
-      j++;
     }
-    i++;
   }
 
   return targetData;
 };
 
 // 初期データ
-const initialData = [3, 4, 1, 5, 2];
+const initialData = [5, 3, 2, 4, 1];
 
 // 昇順でソート
 const ascResultData = bubbleSortByAsc(initialData);
